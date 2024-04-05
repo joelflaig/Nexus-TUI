@@ -2,6 +2,7 @@
 '''
 Mojo library providing apis and functions for writing TUIs.
 '''
+from .cursor import cursor
 
 alias bel = chr(7)
 """
@@ -52,4 +53,7 @@ alias DEL = chr(127)
 """
 Delete character.
 """
+
+fn pnn(str: String):
+  print(str, end='')
 
