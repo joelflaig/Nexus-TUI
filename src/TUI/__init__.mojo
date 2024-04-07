@@ -53,6 +53,12 @@ alias DEL = chr(127)
 """
 Delete character.
 """
+# TODO docstrings
+alias csi = esc + "["
+
+alias dcs = esc + "P"
+
+alias osc = esc + "]"
 
 fn pnn(str: String):
   print(str, end='')
